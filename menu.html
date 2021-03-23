@@ -3,8 +3,8 @@
  
     <meta charset="utf-8">
     <title>WXYZr Burger: San Antonio</title>
-    <meta name="description" content="CSS only mobile first navigation">
-    <meta name="author" content="Ian Yates">
+    <meta name="description" content="WXYZr Burger, WXYZr Social Technology">
+    <meta name="author" content="David Contreras">
  
     <!--Mobile specific meta goodness :)-->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -20,22 +20,22 @@
     <link rel="shortcut icon" href="img/favicon.ico">
     <style>
         /* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0b1 | 201101 
-   NOTE: WORK IN PROGRESS
-   USE WITH CAUTION AND TEST WITH ABANDON */
- 
-   html, body, div, span, applet, object, iframe,
-   h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-   a, abbr, acronym, address, big, cite, code,
-   del, dfn, em, img, ins, kbd, q, s, samp,
-   small, strike, strong, sub, sup, tt, var,
-   b, u, i, center,
-   dl, dt, dd, ol, ul, li,
-   fieldset, form, label, legend,
-   table, caption, tbody, tfoot, thead, tr, th, td,
-   article, aside, canvas, details, figcaption, figure, 
-   footer, header, hgroup, menu, nav, section, summary,
-   time, mark, audio, video {
+    v2.0b1 | 201101 
+    NOTE: WORK IN PROGRESS
+    USE WITH CAUTION AND TEST WITH ABANDON */
+    
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, figcaption, figure, 
+    footer, header, hgroup, menu, nav, section, summary,
+    time, mark, audio, video {
        margin: 0;
        padding: 0;
        border: 0;
@@ -83,7 +83,11 @@ h2 {
 }
  
 /*layout*/
- 
+.active {
+    background-color: dodgerblue;
+    color: white;
+}
+
 .wrapper {
 }
  
@@ -191,24 +195,9 @@ a.to_nav:focus {
     height: 2em;
     border-bottom: 1px solid #383838;
 }
- 
-#primary_nav li:last-child a {
-    border-bottom: none;
-}
- 
-#primary_nav li a:hover,
-#primary_nav li a:focus {
-    color: #1c1c1c;
-    background: #ccc;
-}
 
-#primary_nav li a:active {
-    background-color: dodgerblue;
-    color: white;
-}
  
 /*footer*/
- 
 footer {
     font-family: ’PT Serif’, serif;
     font-style: italic;

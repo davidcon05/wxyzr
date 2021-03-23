@@ -3,8 +3,8 @@
  
     <meta charset="utf-8">
     <title>WXYZr Burger: San Antonio</title>
-    <meta name="description" content="CSS only mobile first navigation">
-    <meta name="author" content="Ian Yates">
+    <meta name="description" content="WXYZr Burger, WXYZr Social Technology">
+    <meta name="author" content="David Contreras">
  
     <!--Mobile specific meta goodness :)-->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -83,7 +83,11 @@ h2 {
 }
  
 /*layout*/
- 
+.active {
+    background-color: dodgerblue;
+    color: white;
+}
+
 .wrapper {
 }
  
@@ -191,21 +195,7 @@ a.to_nav:focus {
     height: 2em;
     border-bottom: 1px solid #383838;
 }
- 
-#primary_nav li:last-child a {
-    border-bottom: none;
-}
- 
-#primary_nav li a:hover,
-#primary_nav li a:focus {
-    color: #1c1c1c;
-    background: #ccc;
-}
 
-#primary_nav li a:active {
-    background-color: dodgerblue;
-    color: white;
-}
  
 /*footer*/
  
@@ -240,7 +230,7 @@ footer {
     </div><!--end wrapper-->
     <nav id="primary_nav">
         <ul>
-            <li><a href="/home.html">Home</a></li>
+            <li><a href="/index.html">Home</a></li>
             <li><a href="/menu.html">Menu</a></li>
             <li><a class="active" href="#Specials">Specials</a></li>
             <li><a href="#home">Top</a></li>
