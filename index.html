@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
  
@@ -26,16 +27,10 @@
  
    html, body, div, span, applet, object, iframe,
    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-   a, abbr, acronym, address, big, cite, code,
-   del, dfn, em, img, ins, kbd, q, s, samp,
-   small, strike, strong, sub, sup, tt, var,
-   b, u, i, center,
-   dl, dt, dd, ol, ul, li,
-   fieldset, form, label, legend,
+   a, img, ol, ul, li,form, label, legend,
    table, caption, tbody, tfoot, thead, tr, th, td,
-   article, aside, canvas, details, figcaption, figure, 
-   footer, header, hgroup, menu, nav, section, summary,
-   time, mark, audio, video {
+   article, figure, footer, header, hgroup, menu, nav, 
+   section, summary, time, mark, audio, video {
        margin: 0;
        padding: 0;
        border: 0;
@@ -76,6 +71,11 @@ h2 {
     line-height: 1.4em;
     margin: 0 0 .4em;
     font-weight: bold;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
  
 /*layout*/
@@ -208,17 +208,17 @@ footer {
     <div class="wrapper">
      
         <header>
-          <h1 class="logo"><a href="">WXYZr Burger: San Antonio</a></h1>
+          <h1 class="logo"><a href="">WXYZr Burger</a></h1>
           <a class="to_nav" href="#primary_nav">Menu</a>
         </header>
-         
         <article>
+            <img src="/img/saucyone.jpeg" alt="The Saucy Burger" >
             <h2>Welcome to WXYZr Burger!</h2> 
             <p>WXYZr Burger is a Texas grown operation from right here in San Antonio! We're proud to have served the community for the last 12 years and hope to serve you and yours for many more!</p> 
         </article>
          
         <article>
-            <h2>Hours</h2> 
+            <h2>Hours of Operation</h2> 
             <ul> 
                 <li>Monday - Saturady: 9:00 AM - 10:00 PM</li> 
                 <li>Sundays & Holidays: 12:00 PM - 5:00 PM</li> 
