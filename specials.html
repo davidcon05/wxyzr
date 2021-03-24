@@ -85,6 +85,27 @@
         color: white;
     }
 
+    .text {
+        color: white;
+        background-color: #1c1c1c;
+        font-size: 16px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 32px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+    }
+      
+      
+
     .wrapper {
         /* empty at atm wrapper applies to: */
     }
@@ -92,7 +113,28 @@
     .swiper-container {
         width: 100%;
         height: 400px;
+        background-size: 100%;
     }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+  
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
     
     /* divisions of the pages, for food categories */
     article {
@@ -227,12 +269,23 @@
             <div class="swiper-container">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide" tyle="background-image:url(/img/lunch-specials.jpg)">Lunch Specials</div>
-                <div class="swiper-slide">UTSA Discount</div>
-                <div class="swiper-slide">Military Discount</div>
-                <div class="swiper-slide">Google Review Discount</div>
-                <div class="swiper-slide">Facebook Like Discount</div>
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="text">On These Burgers: Classy, Spicy Chicken and Saucy One</div>
+                        <img src="./img/lunch.jpg" alt="Lunch Specials" style="width:100%">
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="text">5% off for UTSA Students with ID</div>
+                        <img src="./img/utsa.jpg" alt="UTSA Discount" style="width:100%">
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="text">5% off for Active Duty and Veterans with ID</div>
+                        <img src="./img/mildiscount.jpg" alt="Military Discount" style="width:100%">
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="text">Free Side when you leave a review</div>
+                        <img src="./img/Google-Review-Icon.jpg" alt="Google Review" style="width:100%">
+                    </div>
                 </div>
                 <!-- If we need pagination -->
                 <div class="swiper-pagination"></div>
@@ -247,7 +300,6 @@
                     },
                 });
             </script>
-            <p>Show your server proof of ID or review for discount.</p> 
         </article>
         <footer>
             <p>Copyright &copy;2021 WXYZr</p>
