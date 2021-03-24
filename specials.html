@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- 
     <meta charset="utf-8">
     <title>WXYZr Burger: San Antonio</title>
     <meta name="description" content="WXYZr Burger, WXYZr Social Technology">
@@ -88,6 +87,11 @@
 
     .wrapper {
         /* empty at atm wrapper applies to: */
+    }
+
+    .swiper-container {
+        width: 100%;
+        height: 400px;
     }
     
     /* divisions of the pages, for food categories */
@@ -210,15 +214,40 @@
     </style>
 </head>
 <body id="home">
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <div class="wrapper">
         <header>
-            <h1 class="logo"><a href="">WXYZr Burger: San Antonio</a></h1>
+            <h1 class="logo"><a href="">WXYZr Burger</a></h1>
             <a class="to_nav" href="#primary_nav">Menu</a>
         </header>
         <article>
             <h2>Swipe through specials!</h2> 
-            <p>Put carousel here</p>
-            <p>Ask your server about our social media special!</p> 
+            <!-- Slider main container -->
+            <div class="swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide" tyle="background-image:url(/img/lunch-specials.jpg)">Lunch Specials</div>
+                <div class="swiper-slide">UTSA Discount</div>
+                <div class="swiper-slide">Military Discount</div>
+                <div class="swiper-slide">Google Review Discount</div>
+                <div class="swiper-slide">Facebook Like Discount</div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+              <!-- Initialize Swiper -->
+            <script>
+                var swiper = new Swiper('.swiper-container', {
+                pagination: {
+                    el: '.swiper-pagination',
+                    },
+                });
+            </script>
+            <p>Show your server proof of ID or review for discount.</p> 
         </article>
         <footer>
             <p>Copyright &copy;2021 WXYZr</p>
