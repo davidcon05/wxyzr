@@ -266,7 +266,7 @@
         <!--Menu Categories-->
         <!--Sides-->
         <article>
-            <h2>Sides</h2> 
+            <h2>Swipe thru Sides</h2> 
             <div class="swiper-container">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
@@ -284,6 +284,9 @@
                         <div class="text">Side description here</div>
                     </div>
                 </div>
+                <!-- Swiper Buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
                 <!-- If we need scrollbar -->
                 <div class="swiper-scrollbar"></div>
             </div> 
@@ -317,7 +320,12 @@
         <!--Swipper Script-->
         <script>
             var swiper = new Swiper('.swiper-container', {
-            scrollbar: {
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+                scrollbar: {
                 el: '.swiper-scrollbar',
                 },
             });

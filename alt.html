@@ -283,6 +283,9 @@
                         <div class="text">Burger description here</div>
                     </div>
                 </div>
+                 <!-- If we need navigation buttons -->
+                 <div class="swiper-button-prev"></div>
+                 <div class="swiper-button-next"></div>                
                 <!-- If we need scrollbar -->
                 <div class="swiper-scrollbar"></div>
             </div> 
@@ -291,7 +294,12 @@
         
         <script>
             var swiper = new Swiper('.swiper-container', {
-            scrollbar: {
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+                scrollbar: {
                 el: '.swiper-scrollbar',
                 },
             });
