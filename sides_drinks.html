@@ -11,8 +11,7 @@
     <!--General CSS sheet-->
     <link rel="stylesheet" href="tbstyle.css">
     <!--Swipper CSS-->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/swiper.css" />
     <!--[if lt IE 9]>
         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -25,28 +24,28 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <div class="wrapper">
         <header>
-            <h1 class="logo"><a href="">WXYZr Burger</a></h1>
+            <h1 class="logo"><a href="" style="color:#f0541c;">B U N Z</a></h1>
             <a class="to_nav" href="#primary_nav">Menu</a>
         </header>
         <!--Menu Categories-->
         <!--Sides-->
         <article>
-            <h2>Swipe thru Sides</h2> 
+            <h2>Swipe a Side</h2> 
             <div class="swiper-container">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
                     <!-- Slides -->
-                    <div class="swiper-slide">Side Option 1
-                        <div class="text">Side description here</div>
+                    <div class="swiper-slide" style="background-image:url(./img/tb/chilifries.png); background-position: center center; background-size:cover;">
+                        <div class="text" style="text-align: center;">Chili Fries - $6.50</div>
                     </div>
-                    <div class="swiper-slide">Side Option 2
-                        <div class="text">Side description here</div>
+                    <div class="swiper-slide" style="background-image:url(./img/tb/bombfries.jpg); background-position: center center; background-size:cover;">
+                        <div class="text" style="text-align: center;">Bombardier Fries - $6.50</div>
                     </div>
-                    <div class="swiper-slide">Side Option ...
-                        <div class="text">Side description here</div>
+                    <div class="swiper-slide" style="background-image:url(./img/tb/chilibowl.jpg); background-position: center center; background-size:cover;">
+                        <div class="text" style="text-align: center;">Chili Bowl - $3.50</div>
                     </div>
-                    <div class="swiper-slide">Side Option n
-                        <div class="text">Side description here</div>
+                    <div class="swiper-slide" style="background-image:url(./img/tb/salad.jpg); background-position: center center; background-size:cover;">
+                        <div class="text" style="text-align: center;">Salad - $2.95</div>
                     </div>
                 </div>
                 <!-- Swiper Buttons -->
@@ -63,24 +62,30 @@
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
                     <!-- Slides -->
-                    <div class="swiper-slide">Soft Drink Icons
-                        <div class="text">List of all soft drinks</div>
+                    <div class="swiper-slide" style="background-image:url(./img/tb/churroshake.png); background-position: center center; background-size:cover;">
+                        <div class="text" style="text-align: center;">Caramel Churro Shake - $6.50</div>
                     </div>
-                    <div class="swiper-slide">Beer Icons
-                        <div class="text">List of all beers</div>
+                    <div class="swiper-slide" style="background-image:url(./img/tb/strawberryshake.png); background-position: center center; background-size:cover;">
+                        <div class="text" style="text-align: center;">Strawberry Shake - $6.50</div>
                     </div>
-                    <div class="swiper-slide">Mixed Drink option 1
-                        <div class="text">Mixed drink description</div>
-                    </div>
-                    <div class="swiper-slide">Mixed drink Option n
-                        <div class="text">Mixed drink description</div>
+                    <div class="swiper-slide" style="background-image:url(./img/tb/nutellashake.png); background-position: center center; background-size:cover;">
+                        <div class="text" style="text-align: center;">Pretzel Nutella - $6.50</div>
                     </div>
                 </div>
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
+                <!-- Swiper Buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
                 <!-- If we need scrollbar -->
                 <div class="swiper-scrollbar"></div>
             </div> 
+        </article>
+        <article>
+            <h2 style="font-family: Arial, sans-serif; text-align:left">DRINKS</h2>
+            <p style="font-weight:bold;">
+                Fountain Drinks $1.95<br>
+                Iced Tea +1.95<br>
+                Draft Beer $4.95<br>
+            </p>
         </article>
         <!--Swipper Script-->
         <script>
@@ -103,7 +108,8 @@
     <nav id="primary_nav">
         <ul>
             <li><a href="/index.html">Home</a></li>
-            <li><a href="/bunz.html">Beef Patties</a></li>
+            <li><a href="/bunz.html">Burgerz</a></li>
+            <li><a href="/gordog.html">Gordog</a></li>
             <li><a class="active" href="/sides_drinks.html">Sides and Drinks</a></li>
             <li><a href="#home">Top</a></li>
         </ul>
