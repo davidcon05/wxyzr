@@ -72,11 +72,11 @@ h3 {
     color: white;
     background-color: #1c1c1c;
     font-size: 16px;
-    padding: 8px 12px;
+    padding: 2px 2px;
     position: absolute;
-    bottom: 32px;
+    bottom: 8px;
     width: 100%;
-    text-align: center;
+    text-align: left;
 }
 
 .numbertext {
@@ -129,7 +129,7 @@ button {
     text-align: center;
     font-size: 18px;
     background: #fff;
-
+    background-size:auto;
     /* Center slide text vertically */
     display: -webkit-box;
     display: -ms-flexbox;
@@ -144,6 +144,14 @@ button {
     -webkit-align-items: center;
     align-items: center;
   }
+
+.swiper-button-prev {
+    color: #f0541c;
+}
+  
+.swiper-button-next {
+    color: #f0541c;
+}  
 
 /* divisions of the pages, for food categories */
 article {
