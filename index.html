@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>WXYZr Burger: San Antonio</title>
+    <title>HOME | BUNZ</title>
     <meta name="description" content="WXYZr Burger, WXYZr Social Technology">
     <meta name="author" content="David Contreras">
  
@@ -74,6 +74,7 @@
     h2 {
         font-family: ’PT Serif’, serif;
         font-size: 32px;
+        text-align: center;
         line-height: 1.4em;
         margin: 0 0 .4em;
         font-weight: bold;
@@ -81,7 +82,7 @@
  
     /*layout*/
     .active {
-        background-color: dodgerblue;
+        background-color: #f0541c;
         color: white;
     }
 
@@ -103,7 +104,33 @@
         position: absolute;
         top: 0;
     }
-      
+
+    button {
+        border: none;
+        color: white;
+        background-color: #f0541c;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+
+    .container { 
+        height: 64px;
+        position: relative;
+    }
+
+    .center {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
       
 
     .wrapper {
@@ -138,7 +165,6 @@
     
     /* divisions of the pages, for food categories */
     article {
-        border-bottom: 1px solid #d8d8d8;
         padding: 10px 20px 0 20px;
         margin: 10px 0;
     }
@@ -179,7 +205,7 @@
     a.to_nav {
         float: right;
         color: #fff;
-        background: #4e4e4e;
+        background: #f0541c;
         text-decoration: none;
         padding: 0 10px;
         font-size: 12px;
@@ -234,7 +260,7 @@
     #primary_nav li a {
         display: block;
         padding: 0 20px;
-        color: #fff;
+        color: white;
         text-decoration: none;
         font-weight: bold;
         text-transform: uppercase;
@@ -261,30 +287,33 @@
     <div class="wrapper">
      
         <header>
-          <h1 class="logo"><a href="">WXYZr Burger</a></h1>
+          <h1 class="logo"><a href="" style="color:#f0541c;">B U N Z</a></h1>
           <a class="to_nav" href="#primary_nav">Menu</a>
         </header>
         <!--Logo or Premiere Product-->
         <article>
-            <img src="./img/saucyone.jpeg" alt="The Saucy Burger" style="width:100%;">
-            <h2>Welcome to WXYZr Burger!</h2> 
-            <p>WXYZr Burger is a Texas grown operation from right here in San Antonio! We're proud to have served the community for the last 12 years and hope to serve you and yours for many more!</p> 
+            <img src="/img/tb/logo.jpg" alt="Bunz: Handcraft Burgers" style="width:100%;">
+            <h2>Welcome to BUNZ!</h2> 
+            <p style="text-align:center">Our culinary training is in our blood. Our motto is “Fresh and from Scratch.” 
+             Nothing compares with fresh daily baked Bunz made with local rich flour from an Austin mill.</p>
+            <p style="text-align:center">Our chuck roll blend is ground daily with shoulder clot and brisket to maximize juiciness and freshness. 
+               All ingredients are lovingly farmed and hand-selected. This means our creation is made from only Texas' finest, for your enjoyment.</p>
+            <p style="text-align:center"> Bon Appétit, <br>Thierry and Edwin</p>
         </article>
         <!--Accolades and Awards-->
-        <article>
-            <ul>
-                <li>#1 Hawaiian Burger, Southern Times 2016</li>
-                <li>#2 Alternative Burger Options, UTSA Weekly 2019</li>
-                <li>#1 Carne Asada Fries, Fiesta Notcias, 2021</li>
-            </ul>
-        </article>
         <!--Hours-->
         <article style="text-align: center;">
-            <h2 style="text-align:center;">Hours of Operation</h2> 
-                <p>Monday - Saturady: 9:00 AM - 10:00 PM
-                    <br>Sundays & Holidays: 12:00 PM - 5:00 PM</p> 
+            <h2>Hours of Operation</h2> 
+                <p>MON - SAT: 11AM - 9PM
+                    <br>SUNDAYS: 11AM - 6PM</p> 
         </article>
-         
+        <article>
+        <div class ="container">
+            <div class="center">
+                <button>Learn More About Us</button>
+            </div>
+        </div>
+        </article>
         <footer>
             <p>Copyright &copy;2021 WXYZr</p>
         </footer>
@@ -293,11 +322,8 @@
     <nav id="primary_nav">
         <ul>
             <li><a class="active" href=#Home>Home</a></li>
-            <li><a href="/beef.html">Beef Patties</a></li>
-            <li><a href="/bird.html">Bird Patties</a></li>
-            <li><a href="/alt.html">Alternative Patties</a></li>
+            <li><a href="/bunz.html">Burgers</a></li>
             <li><a href="/sides_drinks.html">Sides and Drinks</a></li>
-            <li><a href="/specials.html">Specials</a></li>
             <li><a href="#home">Top</a></li>
         </ul>
     </nav><!--end primary_nav-->
