@@ -145,14 +145,6 @@ button {
     align-items: center;
   }
 
-.swiper-button-prev {
-    color: #f0541c;
-}
-  
-.swiper-button-next {
-    color: #f0541c;
-}  
-
 /* divisions of the pages, for food categories */
 article {
     padding: 10px 20px 0 20px;
