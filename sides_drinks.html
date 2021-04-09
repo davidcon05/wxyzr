@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>WXYZr Burger: San Antonio</title>
+    <title>SIDES & DRINKS | BUNZ</title>
     <meta name="description" content="WXYZr Burger, WXYZr Social Technology">
     <meta name="author" content="David Contreras">
  
     <!--Mobile First Design Tag-->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <!--General CSS sheet-->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="tbstyle.css">
     <!--Swipper CSS-->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
@@ -18,242 +18,7 @@
     <![endif]-->
     <!-- Favicons-->
     <link rel="shortcut icon" href="img/favicon.ico">
-    <style>
-    /* http://meyerweb.com/eric/tools/css/reset/ v2.0b1 | 201101  */
- 
-    html, body, div, span, applet, object, iframe,
-    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-    a, abbr, acronym, address, big, cite, code,
-    del, dfn, em, img, ins, kbd, q, s, samp,
-    small, strike, strong, sub, sup, tt, var,
-    b, u, i, center,
-    dl, dt, dd, ol, ul, li,
-    fieldset, form, label, legend,
-    table, caption, tbody, tfoot, thead, tr, th, td,
-    article, aside, canvas, details, figcaption, figure, 
-    footer, header, hgroup, menu, nav, section, summary,
-    time, mark, audio, video {
-       margin: 0;
-       padding: 0;
-       border: 0;
-       outline: 0;
-       font-size: 100%;
-       font: inherit;
-       vertical-align: baseline;
-    }
-    /* HTML5 display-role reset for older browsers */
-    article, aside, details, figcaption, figure, 
-    footer, header, hgroup, menu, nav, section {
-        display: block;
-    }
-    /* style classes */
- 
-    body {
-    font: 16px/1.4em ’PT Sans’, sans-serif;;
-    color: #1c1c1c;
-    }
- 
-    p,
-    ul {
-        margin: 0 0 1.5em;
-    }
- 
-    ul {
-        list-style: disc;
-        padding: 0 0 0 20px;
-    }
- 
-    a {
-        color: #1D745A;
-    }
- 
-    h1 {
-        /* input custom styling */
-    }
- 
-    h2 {
-        font-family: ’PT Serif’, serif;
-        font-size: 32px;
-        line-height: 1.4em;
-        margin: 0 0 .4em;
-        font-weight: bold;
-    }
- 
-    /*layout*/
-    .active {
-        background-color: dodgerblue;
-        color: white;
-    }
-
-    .text {
-        color: white;
-        background-color: #1c1c1c;
-        font-size: 16px;
-        padding: 8px 12px;
-        position: absolute;
-        bottom: 32px;
-        width: 100%;
-        text-align: center;
-    }
-
-    .numbertext {
-        color: #f2f2f2;
-        font-size: 12px;
-        padding: 8px 12px;
-        position: absolute;
-        top: 0;
-    }
-      
-      
-
-    .wrapper {
-        /* empty at atm wrapper applies to: */
-    }
-
-    .swiper-container {
-        width: 100%;
-        height: 400px;
-        background-size: 100%;
-    }
-
-    .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
-  
-        /* Center slide text vertically */
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        align-items: center;
-      }
-    
-    /* divisions of the pages, for food categories */
-    article {
-        border-bottom: 1px solid #d8d8d8;
-        padding: 10px 20px 0 20px;
-        margin: 10px 0;
-    }
- 
-    /* header */
- 
-    header {
-        background: #1c1c1c;
-        padding: 15px 20px;
-    }
- 
-    header:before,
-    header:after {
-        content:"";
-        display:table;
-    }
-         
-    header:after {
-        clear:both;
-    }
-         
-    /* For IE 6/7 (trigger hasLayout) */
-    header {
-        zoom:1;
-    }
- 
-    h1.logo a {
-        color: #d8d8d8;
-        text-decoration: none;
-        font-weight: bold;
-        text-transform: uppercase;
-        font-size: 20px;
-        line-height: 22px;
-        float: left;
-        letter-spacing: 0.2em;
-    }
- 
-    a.to_nav {
-        float: right;
-        color: #fff;
-        background: #4e4e4e;
-        text-decoration: none;
-        padding: 0 10px;
-        font-size: 12px;
-        font-weight: bold;
-        line-height: 22px;
-        height: 22px;
-        text-transform: uppercase;
-        letter-spacing: 0.1em;
-        -webkit-border-radius: 2px;
-        -moz-border-radius: 2px;
-        border-radius: 2px;
-    }
- 
-    a.to_nav:hover,
-    a.to_nav:focus {
-        color: #1c1c1c;
-        background: #ccc;
-    }
-
-    blockquote, q {
-       quotes: none;
-    }
-    
-    blockquote:before, blockquote:after,
-    q:before, q:after {
-       content: ’’;
-       content: none;
-    }
-    
-    /* highlight insers if you use any */
-    ins {
-       text-decoration: none;
-    }
-
-    del {
-        text-decoration: line-through;
-    }
-    
-    table {
-       border-collapse: collapse;
-       border-spacing: 0;
-    }
-
-    /* navigation */ 
- 
-    #primary_nav ul {
-        list-style: none;
-        background: #1c1c1c;
-        padding: 5px 0;
-    }
- 
-    #primary_nav li a {
-        display: block;
-        padding: 0 20px;
-        color: #fff;
-        text-decoration: none;
-        font-weight: bold;
-        text-transform: uppercase;
-        letter-spacing: 0.1em;
-        letter-spacing: 0.1em;
-        line-height: 2em;
-        height: 2em;
-        border-bottom: 1px solid #383838;
-    }
-
- 
-    /*footer*/
-    footer {
-        font-family: ’PT Serif’, serif;
-        font-style: italic;
-        text-align: center;
-        font-size: 14px;
-    }
-    </style>
+   
 </head>
 <body id="home">
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
@@ -338,11 +103,8 @@
     <nav id="primary_nav">
         <ul>
             <li><a href="/index.html">Home</a></li>
-            <li><a href="/beef.html">Beef Patties</a></li>
-            <li><a href="/bird.html">Bird Patties</a></li>
-            <li><a href="/alt.html">Alternative Patties</a></li>
+            <li><a href="/bunz.html">Beef Patties</a></li>
             <li><a class="active" href="/sides_drinks.html">Sides and Drinks</a></li>
-            <li><a href="/specials.html">Specials</a></li>
             <li><a href="#home">Top</a></li>
         </ul>
     </nav><!--end primary_nav-->
