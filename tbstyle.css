@@ -26,7 +26,43 @@ footer, header, hgroup, menu, nav, section {
 /* style classes */
 
 /*media queries*/
+@media only screen and (min-width: 768px) {
+ 
+    a.to_nav {
+        display: none;
+    }
+     
+    .wrapper {
+        position: relative;
+        width: 768px;
+        margin: auto;
+    }
+     
+    #primary_nav {
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        background: none;
+    }
+     
+    #primary_nav li {
+        display: inline;
+    }
+     
+    #primary_nav li a {
+        float: left;
+        border: none;
+        padding: 0 10px;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        border-radius: 2px;
+    }
 
+    #primary_nav li.top {
+        display: none;
+    }
+ 
+}
 
 body {
 font: 16px/1.4em ’PT Sans’, sans-serif;;
@@ -116,6 +152,13 @@ button {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
+
+.centerImg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
   
 
 .wrapper {
